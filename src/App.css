@@ -1,19 +1,18 @@
-/* Custom variables for a modern, calming Pastel Tech layout */
 :root {
-  --primary-deep: #1A1A1E;
-  /* Sleek deep charcoal/black */
+  --primary-deep: #FFFFFF;
+  /* Crisp white for primary headings in dark mode */
   --accent-blue: #FFD93D;
-  /* Vibrant, premium pastel yellow */
-  --accent-light: #FFFBE6;
-  /* Soft creamy warm backdrop tint */
-  --text-dark: #2C2C2E;
-  /* Deep charcoal for highly readable text */
-  --text-light: #6E6E73;
-  /* Muted dark grey for secondary text */
-  --bg-clean: #FCFCFA;
-  /* Soft off-white with warm undertone */
-  --bg-alt: #F4F4F6;
-  /* Gentle background panel shift */
+  /* Radiant pastel yellow accent */
+  --accent-light: rgba(255, 217, 61, 0.1);
+  /* Warm glowing golden tint overlay */
+  --text-dark: #E5E5EA;
+  /* High contrast light grey for body text readability */
+  --text-light: #AEAEB2;
+  /* Soft grey for subtitles/secondary text */
+  --bg-clean: #121214;
+  /* Deep obsidian black body background */
+  --bg-alt: #1C1C1E;
+  /* Charcoal slate container panel background */
   --radius: 16px;
   /* Extra rounded, organic curves for a friendly UI feel */
   --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);

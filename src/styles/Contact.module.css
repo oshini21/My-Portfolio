@@ -83,7 +83,7 @@
 }
 
 .socialBtn {
-  background-color: var(--primary-deep) !important;
+  background-color: var(--bg-clean) !important;
   color: #ffffff !important;
   padding: 0.4rem 0.8rem;
   border-radius: 4px;
@@ -94,6 +94,7 @@
 
 .socialBtn:hover {
   background-color: var(--accent-blue) !important;
+  color: #121214 !important;
   transform: translateY(-1px);
 }
 
@@ -101,7 +102,7 @@
   background-color: var(--bg-alt);
   padding: 2.5rem;
   border-radius: var(--radius);
-  border: 1px solid #e2e8f0;
+  border: 1px solid #2C2C2E;
 }
 
 .successMessage {
@@ -136,23 +137,23 @@
 .formGroup input, .formGroup textarea {
   padding: 0.75rem;
   border-radius: 6px;
-  border: 1px solid #cbd5e1;
-  background-color: #ffffff;
+  border: 1px solid #2C2C2E;
+  background-color: var(--bg-clean);
   font-family: inherit;
   font-size: 0.95rem;
-  color: var(--text-dark);
+  color: #ffffff;
   transition: var(--transition);
 }
 
 .formGroup input:focus, .formGroup textarea:focus {
   border-color: var(--accent-blue);
-  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+  box-shadow: 0 0 0 3px rgba(255, 217, 61, 0.15);
   outline: none;
 }
 
 .submitBtn {
   background-color: var(--accent-blue);
-  color: var(--primary-deep);
+  color: #121214;
   padding: 0.8rem;
   border-radius: 6px;
   font-weight: 600;
@@ -162,8 +163,8 @@
 }
 
 .submitBtn:hover {
-  background-color: var(--primary-deep);
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #121214;
 }
 
 @media (max-width: 800px) {

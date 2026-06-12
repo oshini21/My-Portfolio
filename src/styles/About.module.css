@@ -47,8 +47,8 @@
 .educationCard {
   display: flex;
   gap: 1.5rem;
-  background-color: #ffffff;
-  border: 1px solid #e2e8f0;
+  background-color: var(--bg-alt);
+  border: 1px solid #2C2C2E;
   padding: 1.5rem;
   border-radius: var(--radius);
   align-items: center;
@@ -82,8 +82,8 @@
 }
 
 .skillCategoryCard {
-  background-color: #ffffff;
-  border: 1px solid #e2e8f0;
+  background-color: var(--bg-alt);
+  border: 1px solid #2C2C2E;
   padding: 1.5rem;
   border-radius: var(--radius);
 }
@@ -92,7 +92,7 @@
   font-size: 1.15rem;
   color: var(--primary-deep);
   margin-bottom: 1.2rem;
-  border-bottom: 1px solid #f1f5f9;
+  border-bottom: 1px solid #2C2C2E;
   padding-bottom: 0.5rem;
 }
 
@@ -103,13 +103,13 @@
 }
 
 .techBadge {
-  background-color: #f1f5f9;
+  background-color: var(--bg-clean);
   color: var(--text-dark);
   padding: 0.4rem 0.8rem;
   font-size: 0.9rem;
   font-weight: 500;
   border-radius: 20px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #2C2C2E;
 }
 
 .profBadge {
@@ -129,7 +129,7 @@
 }
 
 .interestTag {
-  background-color: var(--primary-deep);
+  background-color: var(--bg-alt);
   color: #ffffff;
   padding: 0.6rem 1.2rem;
   border-radius: var(--radius);
@@ -137,7 +137,8 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+  border: 1px solid #2C2C2E;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
 
 .dot {

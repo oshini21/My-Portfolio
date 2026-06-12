@@ -64,26 +64,26 @@
 
  .primaryBtn {
   background-color: var(--accent-blue);
-  color: var(--primary-deep);
+  color: #121214; /* Dark text on yellow button */
   padding: 0.9rem 2rem;
   border-radius: 30px; 
   font-weight: 600;
   font-size: 1rem;
   /* Soft, subtle pastel glow shadow */
-  box-shadow: 0 4px 14px rgba(255, 217, 61, 0.3);
+  box-shadow: 0 4px 14px rgba(255, 217, 61, 0.25);
   transition: var(--transition);
 }
 
 .primaryBtn:hover {
-  background-color: var(--primary-deep);
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #121214;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(26, 26, 30, 0.15);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.15);
 }
 
 .secondaryBtn {
   background-color: transparent;
-  color: var(--primary-deep);
+  color: #ffffff;
   border: 2px solid var(--accent-blue); /* Pastel yellow border */
   padding: 0.9rem 2rem;
   border-radius: 30px;
@@ -93,9 +93,9 @@
 }
 
 .secondaryBtn:hover {
-  background-color: var(--primary-deep);
-  color: #ffffff;
-  border-color: var(--primary-deep);
+  background-color: #ffffff;
+  color: #121214;
+  border-color: #ffffff;
   transform: translateY(-2px);
 }
 
