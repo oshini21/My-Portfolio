@@ -1,0 +1,159 @@
+.heroContainer {
+  min-height: calc(100vh - 140px); /* Centers content vertically on full screens */
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem; /* Generous breathing space between text and photo */
+  padding: 3rem 0;
+}
+
+.heroContent {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.subTitle {
+  color: var(--accent-blue);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.mainTitle {
+  font-size: 3.8rem;
+  color: var(--primary-deep);
+  line-height: 1.1;
+  margin-bottom: 1.2rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.roleTitle {
+  font-size: 1.35rem;
+  color: var(--text-dark);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  border-left: 3px solid var(--accent-blue);
+  padding-left: 15px; /* Adds a clean corporate accent line */
+}
+
+.objective {
+  color: var(--text-light);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  max-width: 620px;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1.2rem; /* Creates a clear, clean gap between buttons */
+  flex-wrap: wrap;
+}
+
+
+
+ .primaryBtn {
+  background-color: var(--accent-blue);
+  color: #ffffff;
+  padding: 0.9rem 2rem;
+  border-radius: 30px; 
+  font-weight: 600;
+  font-size: 1rem;
+  /* Soft, subtle pastel glow shadow */
+  box-shadow: 0 4px 14px rgba(124, 169, 146, 0.3);
+  transition: var(--transition);
+}
+
+.primaryBtn:hover {
+  background-color: #60c669; /* Slightly richer sage on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(124, 169, 146, 0.45);
+}
+
+.secondaryBtn {
+  background-color: transparent;
+  color: var(--primary-deep);
+  border: 2px solid #60c669; /* Softer, pastel-matching border */
+  padding: 0.9rem 2rem;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.secondaryBtn:hover {
+  background-color: var(--primary-deep);
+  color: #ffffff;
+  border-color: var(--primary-deep);
+  transform: translateY(-2px);
+}
+
+.imageContainer {
+  flex: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Enhances the studio headshot elegantly */
+.profileImage {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 24px; /* Soft, organic curves */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  transition: var(--transition);
+  background-color: #000000;
+  padding: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.profileImage:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.18);
+}
+
+/* Responsive adjustments for iPads and Mobile Devices */
+@media (max-width: 968px) {
+  .heroContainer {
+    flex-direction: column-reverse; /* Puts photo on top, text below on mobile */
+    text-align: center;
+    gap: 3rem;
+    padding-top: 4rem;
+    width: 90%;
+  }
+
+  .heroContent {
+    align-items: center;
+    text-align: center;
+  }
+
+  .mainTitle {
+    font-size: 2.8rem;
+  }
+
+  .roleTitle {
+    border-left: none;
+    padding-left: 0;
+    font-size: 1.2rem;
+  }
+
+  .ctaButtons {
+    justify-content: center;
+  }
+
+  .profileImage {
+    max-width: 260px;
+  }
+}
