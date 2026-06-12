@@ -152,7 +152,7 @@
 
 .submitBtn {
   background-color: var(--accent-blue);
-  color: #ffffff;
+  color: var(--primary-deep);
   padding: 0.8rem;
   border-radius: 6px;
   font-weight: 600;
@@ -162,7 +162,8 @@
 }
 
 .submitBtn:hover {
-  background-color: #0369a1;
+  background-color: var(--primary-deep);
+  color: #ffffff;
 }
 
 @media (max-width: 800px) {

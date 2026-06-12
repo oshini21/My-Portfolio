@@ -1,13 +1,21 @@
 /* Custom variables for a modern, calming Pastel Tech layout */
 :root {
-  --primary-deep: #2c3a34;   /* Soft, muted Sage Charcoal instead of harsh black */
-  --accent-blue: #60c669;    /* Elegant, soft Sage Mint Pastel */
-  --accent-light: #f0f7f4;   /* Creamy Mint Backdrop Tint */
-  --text-dark: #3a4741;      /* Deep eucalyptus-grey for highly readable text */
-  --text-light: #708077;     /* Muted sage grey for secondary subtitles */
-  --bg-clean: #fafdfb;       /* Soft off-white clean background to reduce glare */
-  --bg-alt: #f3f8f5;         /* Gentle background panel shift */
-  --radius: 16px;            /* Extra rounded, organic curves for a friendly UI feel */
+  --primary-deep: #1A1A1E;
+  /* Sleek deep charcoal/black */
+  --accent-blue: #FFD93D;
+  /* Vibrant, premium pastel yellow */
+  --accent-light: #FFFBE6;
+  /* Soft creamy warm backdrop tint */
+  --text-dark: #2C2C2E;
+  /* Deep charcoal for highly readable text */
+  --text-light: #6E6E73;
+  /* Muted dark grey for secondary text */
+  --bg-clean: #FCFCFA;
+  /* Soft off-white with warm undertone */
+  --bg-alt: #F4F4F6;
+  /* Gentle background panel shift */
+  --radius: 16px;
+  /* Extra rounded, organic curves for a friendly UI feel */
   --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
