@@ -26,23 +26,35 @@ function About() {
       {/* Education Timeline Node block mapping */}
       <div className={styles.innerSection}>
         <h2 className={styles.subHeading}>Education</h2>
-        <div className={styles.educationCard}>
-          <div className={styles.eduIcon}>🎓</div>
-          <div>
-            <h3>Institute of Technology, University of Moratuwa</h3>
-            <p className={styles.degree}>Higher National Diploma (NDT) in Information Technology</p>
-            <p className={styles.statusTag}>Undergraduate Student</p>
+        <div className={styles.educationContainer}>
+          
+          <div className={styles.educationCard}>
+            <div className={styles.eduIcon}>🎓</div>
+            <div>
+              <h3>Institute of Technology, University of Moratuwa</h3>
+              <p className={styles.degree}>Higher National Diploma (NDT) in Information Technology</p>
+              <p className={styles.statusTag}>Undergraduate Student</p>
+            </div>
           </div>
-          <div>
-            <h3>Rajapaksha central college</h3>
-            <p className={styles.degree}>G.C.E. Advanced Level</p>
-            <p className={styles.statusTag}>Completed 2022 in physical science </p>
+
+          <div className={styles.educationCard}>
+            <div className={styles.eduIcon}>🏫</div>
+            <div>
+              <h3>Rajapaksha Central College</h3>
+              <p className={styles.degree}>G.C.E. Advanced Level (Physical Science)</p>
+              <p className={styles.statusTag}>Completed: 2022 | Results: 3 C Passes</p>
+            </div>
           </div>
-          <div>
-            <h3>Rajapaksha central college</h3>
-            <p className={styles.degree}>G.C.E. Ordinary Level</p>
-            <p className={styles.statusTag}>Completed 2018</p>      
+
+          <div className={styles.educationCard}>
+            <div className={styles.eduIcon}>🏫</div>
+            <div>
+              <h3>Rajapaksha Central College</h3>
+              <p className={styles.degree}>G.C.E. Ordinary Level</p>
+              <p className={styles.statusTag}>Completed: 2018 | Results: 8 A Passes &amp; 1 S Pass</p>
+            </div>
           </div>
+
         </div>
       </div>
 

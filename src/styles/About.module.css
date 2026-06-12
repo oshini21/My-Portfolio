@@ -44,6 +44,12 @@
   position: relative;
 }
 
+.educationContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
 .educationCard {
   display: flex;
   gap: 1.5rem;
@@ -52,6 +58,13 @@
   padding: 1.5rem;
   border-radius: var(--radius);
   align-items: center;
+  transition: var(--transition);
+}
+
+.educationCard:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-blue);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 .eduIcon {
