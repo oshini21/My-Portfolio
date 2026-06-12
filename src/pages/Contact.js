@@ -10,6 +10,7 @@ function Contact() {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [isSending, setIsSending] = useState(false);
 
   // Update specific fields dynamically when typing
   const handleChange = (e) => {
@@ -20,14 +21,37 @@ function Contact() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Captured Form Payload:', formData);
-    setSubmitted(true);
-    
-    // Clear inputs out completely post-submission
-    setFormData({ name: '', email: '', message: '' });
-    setTimeout(() => setSubmitted(false), 5000);
+    setIsSending(true);
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/hewagamageoshinikumari@gmail.com", {
+        method: "POST",
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message
+        })
+      });
+      
+      if (response.ok) {
+        setSubmitted(true);
+        setFormData({ name: '', email: '', message: '' });
+        setTimeout(() => setSubmitted(false), 5000);
+      } else {
+        alert("Failed to send message. Please try again.");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("An error occurred while sending your message. Please try again.");
+    } finally {
+      setIsSending(false);
+    }
   };
 
   return (
@@ -124,7 +148,9 @@ function Contact() {
               ></textarea>
             </div>
 
-            <button type="submit" className={styles.submitBtn}>Send Message</button>
+            <button type="submit" className={styles.submitBtn} disabled={isSending}>
+              {isSending ? 'Sending...' : 'Send Message'}
+            </button>
           </form>
         </div>
       </div>
